@@ -183,6 +183,10 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
         chart.noDataText = noDataText
     }
 
+    func setNoDataTextColor(_ noDataTextColor: Int) {
+        chart.noDataTextColor = RCTConvert.uiColor(noDataTextColor)
+    }
+
     func setTouchEnabled(_ touchEnabled: Bool) {
         chart.isUserInteractionEnabled = touchEnabled
     }
